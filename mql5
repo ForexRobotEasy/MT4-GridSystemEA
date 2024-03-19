@@ -1,0 +1,163 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                            MT4 GridSystemEA.mq5 |
+//|                     Copyright 2023, Forex Robot Easy Team         |
+//|                                          forexroboteasy.com      |
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//|                            Global variables                       |
+//+------------------------------------------------------------------+
+input double LotSize = 0.01; // Default lot size
+input int StopLoss = 50; // Default stop loss in pips
+input int TakeProfit = 100; // Default take profit in pips
+input int TrailingStop = 30; // Default trailing stop in pips
+input double RiskPercentage = 1.0; // Default risk percentage per trade
+input bool UseFilter = true; // Whether to use the filter or not
+input int FastMA = 10; // Fast moving average period
+input int SlowMA = 20; // Slow moving average period
+input string CurrencyPair = 'EURUSD'; // Default currency pair
+input int TradingHoursStart = 0; // Default trading hours start (in hours)
+input int TradingHoursEnd = 23; // Default trading hours end (in hours)
+
+//+------------------------------------------------------------------+
+//|                            Expert initialization                 |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add initialization code here
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//|                          Expert deinitialization                  |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Add deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//|                            Expert tick function                   |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Add tick function code here
+}
+
+//+------------------------------------------------------------------+
+//|                         Expert start function                     |
+//+------------------------------------------------------------------+
+void OnStart()
+{
+    // Add start function code here
+}
+
+//+------------------------------------------------------------------+
+//|                      Custom functions                             |
+//+------------------------------------------------------------------+
+// Add custom functions here
+
+//+------------------------------------------------------------------+
+//|                          Order placement function                 |
+//+------------------------------------------------------------------+
+void PlaceOrder(double price, int slippage)
+{
+    // Add order placement code here
+}
+
+//+------------------------------------------------------------------+
+//|                       Real-time market data retrieval function     |
+//+------------------------------------------------------------------+
+double GetMarketData(string symbol, ENUM_MARKET_INFO_TYPE type)
+{
+    // Add market data retrieval code here
+    return 0.0;
+}
+
+//+------------------------------------------------------------------+
+//|                     Risk management function                      |
+//+------------------------------------------------------------------+
+void ManageRisk()
+{
+    // Add risk management code here
+}
+
+//+------------------------------------------------------------------+
+//|                      Trailing stop function                       |
+//+------------------------------------------------------------------+
+void TrailingStop()
+{
+    // Add trailing stop code here
+}
+
+//+------------------------------------------------------------------+
+//|                    Position sizing and lot calculation function   |
+//+------------------------------------------------------------------+
+double CalculateLotSize()
+{
+    // Add lot calculation code here
+    return 0.01;
+}
+
+//+------------------------------------------------------------------+
+//|                    Backtesting capabilities function              |
+//+------------------------------------------------------------------+
+void Backtest()
+{
+    // Add backtesting code here
+}
+
+//+------------------------------------------------------------------+
+//|                   User-friendly interface function                |
+//+------------------------------------------------------------------+
+void ShowInterface()
+{
+    // Add interface code here
+}
+
+//+------------------------------------------------------------------+
+//|                        Optimization function                      |
+//+------------------------------------------------------------------+
+void Optimize()
+{
+    // Add optimization code here
+}
+
+//+------------------------------------------------------------------+
+//|                     Testing and bug fixing function               |
+//+------------------------------------------------------------------+
+void TestingAndBugFixing()
+{
+    // Add testing and bug fixing code here
+}
+
+//+------------------------------------------------------------------+
+//|                          Installation function                    |
+//+------------------------------------------------------------------+
+void Install()
+{
+    // Add installation code here
+}
+
+//+------------------------------------------------------------------+
+//|                          Expert utilities                          |
+//+------------------------------------------------------------------+
+// Add any additional utility functions here
+
+//+------------------------------------------------------------------+
+//|                          Expert main function                      |
+//+------------------------------------------------------------------+
+void ExpertMain()
+{
+    // Main expert logic goes here
+}
+
+//+------------------------------------------------------------------+
+//|                         Program entry point                        |
+//+------------------------------------------------------------------+
+void OnStart()
+{
+    ExpertMain();
+    return;
+}
